@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project budget tracking</title>
+    <link rel="stylesheet" href="../styles/stylesheet5.css">
+   <link rel="icon" href="../icon/icon1.png">
+</head>
+<script>
+
+    function calculation(){
+ const a=parseInt(document.getElementById("1").value);
+ const b=parseInt(document.getElementById("2").value);
+ const c=parseInt(document.getElementById("3").value);
+ const d=parseInt(document.getElementById("4").value);
+ const e=parseInt(document.getElementById("5").value);
+ const f=parseInt(document.getElementById("6").value);
+ const g=parseInt(document.getElementById("7").value);
+ const h=parseInt(document.getElementById("8").value);
+ const i=parseInt(document.getElementById("9").value);
+ const j=parseInt(document.getElementById("10").value);
+ const k=parseInt(document.getElementById("11").value);
+ const l=parseInt(document.getElementById("12").value);
+ const sum=a+b-c-d-e-f-g-h-i-j-k-l;
+ document.getElementById("13").value=sum;
+ 
+ 
+ }</script>
+<body>
+    <h1>Project Budget Tracking</h1>
+    <hr>
+    <center>
+        <form id="table">
+           <table>
+                 <tr>
+                 <thead>
+                   <b> Project Budget Calculator</b>
+                 </thead>
+                 <tr><hr></tr>
+                 </tr>
+                 <tr>
+                    <td>Initial Budget Estimate:</td>
+                    <td><input type="number" placeholder="per month" id="1"></td>
+                 </tr>
+                 <tr>
+                    <td>Work Breakdown Structure:</td>
+                    <td><input type="number" placeholder="per month" id="2"></td>
+                 </tr>
+                 <tr>
+                    <td> Cost Baseline:</td>
+                    <td><input type="number" placeholder="per month" id="3"></td>
+                 </tr>
+                 <tr>
+                    <td> Actual Costs (AC):</td>
+                    <td><input type="number" placeholder="per month" id="4"></td>
+                 </tr>
+                 <tr>
+                    <td>Earned Value (EV):</td>
+                    <td><input type="number" placeholder="per month" id="5"></td>
+                 </tr>
+                 <tr>
+                    <td> Planned Value :</td>
+                    <td><input type="number" placeholder="per month" id="6"></td>
+                 </tr>
+                 <tr>
+                    <td> Variance Analysis:</td>
+                    <td><input type="number" placeholder="per month" id="7"></td>
+                 </tr>
+                 <tr>
+                    <td>Change Requests:</td>
+                    <td><input type="number" placeholder="per month" id="8"></td>
+                 </tr>
+                 <tr>
+                    <td>Forecasting:</td>
+                    <td><input type="number" placeholder="per month" id="9"></td>
+                 </tr>
+                 <tr>
+                    <td>Reporting Mechanisms:</td>
+                    <td><input type="number" placeholder="per month" id="10"></td>
+                 </tr>
+                 <tr>
+                    <td>Stakeholder Communication:</td>
+                    <td><input type="number" placeholder="per month" id="11"></td>
+                 </tr>
+                 <tr>
+                    <td>Contingency Planning:</td>
+                    <td><input type="number" placeholder="per month" id="12"></td>
+                 </tr>
+                 <tr>
+                    <td>Total:</td>
+                    <td><input type="number" id="13">
+                 </tr>
+                 <tr>
+                    <td><input class="a" type="button" value="Submit" onclick=calculation() ></td>
+                 </tr>
+           </table>
+        </form>
+        <footer>
+            <a href="../html/page1.html"> Home</a> |
+            <a href="../html/page2.html">Personal Budget </a> |
+            <a href="../html/page3.html">Business </a> |
+            <a href="../html/page4.html">Marketing Budget </a> 
+        </footer>
+</body>
+</html>
